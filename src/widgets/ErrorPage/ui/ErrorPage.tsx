@@ -7,8 +7,9 @@ interface ErrorPageProps {
     className?: string;
 }
 
-export const ErrorPage = ({ className } : ErrorPageProps) => {
+export const ErrorPage = ({ className }: ErrorPageProps) => {
     const { t } = useTranslation();
+
     const reloadPage = () => {
         // eslint-disable-next-line no-restricted-globals
         location.reload();
@@ -17,7 +18,9 @@ export const ErrorPage = ({ className } : ErrorPageProps) => {
     return (
         <div className={classNames(cls.ErrorPage, {}, [className])}>
             <p>{t('Произошла непредвиденная ошибка')}</p>
-            <Button onClick={reloadPage}>{t('Перезагрузить страницу')}</Button>
+            <Button onClick={reloadPage}>
+                {t('Обновить страницу')}
+            </Button>
         </div>
     );
 };
