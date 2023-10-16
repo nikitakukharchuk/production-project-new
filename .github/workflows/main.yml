@@ -5,13 +5,13 @@ on:
       [ develop ]
   pull_request:
     branches:
-      [ develop ]
+      [ master ]
 jobs:
   pipeline:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [ 17.x ]
+        node-version: [ 18.x ]
 
     steps:
       - uses: actions/checkout@v2
