@@ -12,5 +12,7 @@
   "О сайте": "About us",
   "Сайдбар": "Sidebar",
   "Короткий язык": "EN",
-  "Войти": "Войти"
+  "Войти": "Войти",
+  "increment": "Increment",
+  "decrement": "Decrement"
 }
